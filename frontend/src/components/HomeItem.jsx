@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useDispatch, useSelector } from "react-redux";
 import { bagActions } from "../store/bagSlice";
-import { GrAddCircle } from "react-icons/gr";
 import { AiFillDelete } from "react-icons/ai";
+import { CgAddR } from "react-icons/cg";
+
 
 const HomeItem = ({ item }) => {
   const dispatch = useDispatch();
@@ -45,7 +46,7 @@ const HomeItem = ({ item }) => {
           className="btn btn-add-bag btn-success"
           onClick={handleAddToBag}
         >
-          <GrAddCircle /> Add to Bag
+          <CgAddR /> Add to Bag
         </button>
       )}
     </div>
